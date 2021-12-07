@@ -1,0 +1,79 @@
+﻿<Page
+    x:Class="ControlApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="White" >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="StackPanelMain" 
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" Width="1000">
+
+            <Button x:Name="BtnHelp" 
+                    Content="Help" 
+                    Width="Auto"  
+                    Margin="20,0,20,0"
+                    Background="LightSalmon" 
+                    Foreground="Black" 
+                    FontSize="30" 
+                    FontFamily="Arial Rounded MT Bold"
+                    CornerRadius="10"
+                    BorderBrush="DarkSlateGray"
+                    Click="BtnHelp_Click" />
+            <Button x:Name="BtnCirc" 
+                    Content="Circling" 
+                    Width="Auto"  
+                    Margin="20,0,20,0"
+                    Background="LightSalmon" 
+                    Foreground="Black"
+                    FontSize="30" 
+                    FontFamily="Arial Rounded MT Bold"
+                    CornerRadius="10"
+                    BorderBrush="DarkSlateGray"
+                    Click="BtnCirc_Click" />
+            <Button x:Name="BtnSens" 
+                    Content="SensorTest" 
+                    Width="Auto"  
+                    Margin="20,0,20,0"
+                    Background="LightSalmon" 
+                    Foreground="Black"
+                    FontSize="30" 
+                    FontFamily="Arial Rounded MT Bold"                
+                    CornerRadius="10"
+                    BorderBrush="DarkSlateGray"
+                    Click="BtnSens_Click" />
+            <Button x:Name="BtnLog" 
+                    Content="Logs" 
+                    Width="Auto"  
+                    Margin="20,0,100,0"
+                    Background="LightSalmon" 
+                    Foreground="Black" 
+                    FontSize="30" 
+                    FontFamily="Arial Rounded MT Bold"
+                    CornerRadius="10"
+                    BorderBrush="DarkSlateGray"
+                    Click="BtnLog_Click" />
+            <Image Width = "300" 
+                   Source = "Assets\CoppeliaSim.png" 
+                   />
+
+        </StackPanel>
+        <Frame Background="LightSalmon"  
+               Grid.Row="1"
+               x:Name="DisplayFrame"
+               Margin="10, 10, 10, 10"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Width="1000"
+               Height="600" />
+    </Grid>
+</Page>

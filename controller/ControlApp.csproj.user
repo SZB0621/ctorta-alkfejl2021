@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\hadlaczkyb\source\repos\ControlApp\Assets\StoreLogo.png</Source>
+    <SmallTileSource>C:\Users\hadlaczkyb\source\repos\ControlApp\Assets\StoreLogo.png</SmallTileSource>
+    <MediumTileSource>C:\Users\hadlaczkyb\source\repos\ControlApp\Assets\StoreLogo.png</MediumTileSource>
+    <WideTileSource>C:\Users\hadlaczkyb\source\repos\ControlApp\Assets\StoreLogo.png</WideTileSource>
+    <LargeTileSource>C:\Users\hadlaczkyb\source\repos\ControlApp\Assets\StoreLogo.png</LargeTileSource>
+    <AppIconSource>C:\Users\hadlaczkyb\source\repos\ControlApp\Assets\StoreLogo.png</AppIconSource>
+    <SplashScreenSource>C:\Users\hadlaczkyb\source\repos\ControlApp\Assets\StoreLogo.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\hadlaczkyb\source\repos\ControlApp\Assets\StoreLogo.png</PackageLogoSource>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DeviceId>30f105c9-681e-420b-a277-7c086ead8a4e</DeviceId>
+    <UseEmulator>true</UseEmulator>
+  </PropertyGroup>
+</Project>

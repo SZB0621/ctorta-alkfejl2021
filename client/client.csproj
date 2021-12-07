@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\common\LocOri.cs" Link="Linked Common Classes\LocOri.cs" />
+    <Compile Include="..\common\Message.cs" Link="Linked Common Classes\Message.cs" />
+    <Compile Include="..\common\RobotSample.cs" Link="Linked Common Classes\RobotSample.cs" />
+    <Compile Include="..\common\Utilities.cs" Link="Linked Common Classes\Utilities.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Linked Common Classes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>
